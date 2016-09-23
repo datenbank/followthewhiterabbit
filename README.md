@@ -1,4 +1,8 @@
 # followthewhiterabbit
+First give the JVM some memory muscles. Type the command
+
+    set GRADLE_OPTS=-Xmx8g
+
 Type the command
 
     gradlew run
