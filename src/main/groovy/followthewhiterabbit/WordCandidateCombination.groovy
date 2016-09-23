@@ -70,7 +70,7 @@ class WordCandidateCombination {
 			cnt++
 		}
 
-		println "\nWord combiantion list size: "+wordsCombination.size()
+		println "\nWord combination list size: "+wordsCombination.size()
 		
 		return wordsCombination
 	}
