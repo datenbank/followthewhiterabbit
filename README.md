@@ -202,7 +202,7 @@ and get the following output
     177|walnuts tourist poty
     178|walnuts tourist typo
     Start crunching MD5...
-    Worked 62 combinations of 178
+    Worked 63 combinations of 178
     Finished, OK
     *********** SECRET IS **************
     pastils turnout towy
