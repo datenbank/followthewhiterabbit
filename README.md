@@ -3,7 +3,7 @@ Type the command
 
     gradlew run
 
-and get following get the output 
+and get the following output 
 
     C:\followthewhiterabbit>gradlew run
     :compileJava UP-TO-DATE
