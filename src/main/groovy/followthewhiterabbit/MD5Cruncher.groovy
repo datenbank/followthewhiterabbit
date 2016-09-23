@@ -15,7 +15,7 @@ class MD5Cruncher {
 		println "Start crunching MD5..."
 
 		def i = 1
-		def x = 0
+		def x = 1
 		def secret = ""
 		def total = words.size()
 		words.each {
