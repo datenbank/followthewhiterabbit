@@ -12,8 +12,8 @@ give the JVM some memory muscles
     set JAVA_OPTS=-Xm8g
 
 Type the command to run the app
-
-   followthewhiterabbit
+    
+    followthewhiterabbit
 
 and get the following output 
 
