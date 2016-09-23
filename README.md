@@ -13,7 +13,7 @@ and get following get the output
     :run
     Reading words list from: http://followthewhiterabbit.trustpilot.com/cs/wordlist
     Creating word combinations: 295 of 295 loops
-    Word combiantion list size: 43251425
+    Word combination list size: 43251425
     Start crunching...
     Worked 15960000 combinations of 43251425
     Finished, OK
