@@ -2,13 +2,7 @@ package followthewhiterabbit
 
 class WordCandidateCombination {
 
-	def filter(words, anagram) {
-
-		/*
-		 * Final list to return
-		 */
-		def wordsCombination = []
-
+	def filterLoopAndCrunch(words, anagram, hash) {
 
 		/*
 		 * Temp. list
@@ -53,26 +47,33 @@ class WordCandidateCombination {
 			}
 		}
 
+		
+		def secret = ""
 
-		//Create a word combination list (cross join the lists)
-		def total=wordsPositionOne.size()
-		def cnt=1
+		//Create a word combination (cross join the lists)
 		wordsPositionOne.each { one ->
-
-			wordsPositionTwo.each { two ->
-				wordsPositionThree.each { three ->
-					wordsCombination << [one, two, three]
+			if(secret == "") { //only loop until we find the secret
+				wordsPositionTwo.each { two ->
+					wordsPositionThree.each { three ->
+									
+						def wordCombi = [one, two, three]
+						def status = new AnagramCruncher().crunch(wordCombi, anagram)
+						
+						if(status==0) {
+							println "Candidate words: $one $two $three"
+						}
+						
+						def secretTmp = new MD5Cruncher().crunch(wordCombi, hash)					
+						if(secretTmp != "") {
+							secret = secretTmp
+						}
+					}
 				}
 			}
 
-
-			print "\rCreating word combinations: $cnt of $total loops"
-
-			cnt++
 		}
+		return secret
 
-		println "\nWord combination list size: "+wordsCombination.size()
 
-		return wordsCombination
 	}
 }
