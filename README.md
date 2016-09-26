@@ -9,7 +9,7 @@ nagivate to directory set
 
 give the JVM some memory muscles
     
-    set JAVA_OPTS=-Xm8g
+    set JAVA_OPTS=-Xmx6g
 
 Type the command to run the app
     
